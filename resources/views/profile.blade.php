@@ -44,8 +44,8 @@
                 <div class="col-6 ">
                     <div class="three-information">
                         <p><i class="fa fa-clock-o"></i>Last login&nbsp;{{\Carbon\Carbon::parse(auth()->user()->last_log_at)->diffForHumans()}}</p>
-                        <p><i class="fa fa-history"></i>Member for {{auth()->user()->created_at->diffForHumans()}} </p>
-                        <p><i class="fa fa-pencil pr-0"></i>{{(auth()->user()->articles->count()=='0')?'no':''}} Articles</p>
+                        <p><i class="fa fa-history"></i>Member since {{auth()->user()->created_at->diffForHumans()}} </p>
+                        <p><i class="fa fa-pencil pr-0"></i>{{auth()->user()->articles->count()}} Articles</p>
 
                         {{--<p><i class="fa fa-pencil pr-0"></i>53 Articles</p>--}}
 

@@ -4,9 +4,9 @@
 <?php if($bestArticle): ?>
 <div class="card  mt-2 px-0">
     <div class=" text-white bg-dark card-header text-center h4">Best Articles today</div>
-    <div class="card-body card-body-img  p-0 border border-dark my-0" onclick="window.location.href='/<?php echo e(str_replace(' ', '-',$bestArticle->title)); ?>'" style="cursor: pointer;">
+    <div class="card-body card-body-img  p-0 border border-dark my-0" onclick="window.location.href='<?php echo e(str_replace(' ', '-',$bestArticle->title)); ?>'" style="cursor: pointer;">
         <p class="card-title h6 font-weight-bold text-center mb-0 px-1 py-0"><?php echo e($bestArticle->title); ?></p>
-       <div class=" img-carier d-inline-flex mt-1" style="background-image:url('http://127.0.0.1:8000/images/<?php echo e($bestArticle->img); ?>');    background-size: 100% 180px ,contain;
+       <div class=" img-carier d-inline-flex mt-1" style="background-image:url('\images/<?php echo e($bestArticle->img); ?>');    background-size: 100% 180px ,contain;
            height: 180px;
            width: 100%;
            background-repeat: no-repeat;

@@ -37,13 +37,13 @@
                              @foreach($articles as $article)
                             <div class="post bg-white mt-3 mx-3 row mx-md-4 mx-sm-5">
                                 <div class="col-12 p-0 bg-white">
-                                    <div class="thumbnail  col-12 col-md-12 col-lg-12 col-xl-7 float-left p-0 text-lg-center text-xl-left " onclick="window.location.href='{{str_replace(' ','-',$article->title)}}'" style="cursor: pointer; background-image:url('/images/{{$article->img}}'); ">
+                                    <div class="thumbnail  col-12 col-md-12 col-lg-12 col-xl-7 float-left p-0 text-lg-center text-xl-left " onclick="window.location.href='{{str_replace(' ','-',$article->title)}}'" style="cursor: pointer; background-image:url('/images/{{$article->img}}');-webkit-background-size: 100% auto;background-size: 100% auto; ">
                                     </div>
                                     <div class="col-12 col-md-12 col-lg-12 col-xl-5 float-left  pl-lg-2 m-0  text-lg-center text-xl-left h-100">
 
                                         <h1 class="h2 text-dark " style="cursor: pointer" onclick="window.location.href='{{str_replace(' ','-',$article->title)}}'">{{$article->title}}</h1>
                                         <div style="cursor: pointer" onclick="window.location.href='user?name={{$article->User->name}}'"><i class="fa fa-user" style="opacity: 0.8;cursor:pointer;"></i><p class="author d-inline-block text-dark muted">{{$article->User->name}}</p></div>
-                                        <p class=" subtitle">{!! str_limit(strip_tags($article->body),132) !!} </p>
+                                        <p class=" subtitle">{!! str_limit(strip_tags($article->body),150) !!} </p>
                                         <a class="  btn btn-primary float-right mt-xl-2 readmore" href="\{{str_replace(' ','-',$article->title)}}">Read more</a>
                                     </div>
                                 </div>

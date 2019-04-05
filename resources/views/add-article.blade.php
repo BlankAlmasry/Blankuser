@@ -42,10 +42,10 @@
                     <div class="card-header">Tags</div>
                     <div class="card-body p-3">
                         <div class="form-group">
-                            <input  id="tags" name="tags"  class="form-control mb-2" required maxlength="120">
+                            <input  id="tags" name="tags"  class="form-control mb-2" required maxlength="30">
                             <label class="small text-muted" for="tags">separate by Comma </label>
                         <div id="span-carrier">
-                        <span class="small text-muted error-reporter float-right text-center">Max 120 character (including spaces)</span>
+                        <span class="small text-muted error-reporter float-right text-center">Max 30 character (including spaces)</span>
                         </div>
                         </div>
                     </div>

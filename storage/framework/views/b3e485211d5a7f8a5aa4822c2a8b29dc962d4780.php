@@ -6,9 +6,9 @@
                  class="octicon octicon-grabber" viewBox="0 0 8 16" version="1.1" aria-hidden="true"><path fill-rule="evenodd" d="M8 4v1H0V4h8zM0 8h8V7H0v1zm0 3h8v-1H0v1z"></path></svg>
         </div>
         <div class="col-4 col-sm-5 col-md-3 col-lg-2 p-0">
-            <a class="navbar-brand  d-inline" href="/home">
+            <a class="navbar-brand  d-inline" href="\">
                 <div class="logo d-inline mx-sm-3">
-                    <img src="/img/blanksquareoutline.jpg" width="30" height="30" class="d-inline align-top" alt="">
+                    <img src="\img/blanksquareoutline.jpg" width="30" height="30" class="d-inline align-top" alt="">
                     BlankUser
                 </div>
             </a>

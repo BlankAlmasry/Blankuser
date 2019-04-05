@@ -68,10 +68,10 @@ class ArticleController extends Controller
     {
         $article = str_replace('-', ' ', $article);
         $article1 = $article . '?';
-        $post = Article::where('title' , $article)->orwhere('title', $article1 )->firstOrFail()->get() ;
-        $visits = $post->first()->visits  +1 ;
-       $post->first()->update(['visits'=>$visits ]);
-        return view( 'read-more', compact('post'));
+        $article = Article::where('title' , $article)->orwhere('title', $article1 )->firstOrFail() ;
+        $visits = $article->visits   ;
+        $article->update(['visits'=>$visits +1 ]);
+        return view( 'read-more', compact('article'));
     }
     public function vote($article)
     {
@@ -204,7 +204,7 @@ class ArticleController extends Controller
                     $tag1->delete();
                 };
                 $taged = Tag::Create(['name' => $tag]);
-                    $art::first()->tags()->attach($taged);
+                    $art->tags()->attach($taged);
             }
 
         }

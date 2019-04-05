@@ -16,6 +16,12 @@ class HomeController extends Controller
 
     public function index(){
         $articles = Article::where('is_approved',1)->latest()->paginate(10);
+        if( auth()->user()){
+            auth()->user()->update([
+                'last_log_at'=>now()->toDateTimeString()
+            ]);
+        }
+
         return view('home',compact('articles'));
     }
     public function edit(){

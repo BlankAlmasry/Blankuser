@@ -23,7 +23,7 @@
                     @csrf
                 <div class="picandabout d-block d-lg-flex pb-3">
                     <div class=" profile-img-carrier d-inline-block mt-4 m-0 p-0" >
-                        <img src="img/user3.png" alt="" class="align-self-center ">
+                        <img src="\{{auth()->user()->avatar}}" alt="" class="align-self-center ">
                         <p class="text-center bg-dark ">
                             <a href="#" class="avatarbtn btn btn-dark w-100 " data-toggle="modal" data-target="#addPostModal">
                                 Change Avatar
