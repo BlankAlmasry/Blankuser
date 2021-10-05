@@ -19,7 +19,7 @@
         <div class="text-center text-md-center col-11 col-md-8 col-lg-9 bg-white profile PageBody mt-4 pt-3  ml-xl-3 pl-2 pl-lg-4 ml-lg-3 ml-md-4 ml-3">
             <div class="picandabout d-block d-lg-flex">
                 <div class=" profile-img-carrier d-inline-block mt-4 m-0 p-0" >
-                    <img src="/{{auth()->user()->avatar}}" alt="" class="align-self-center ">
+                    <img src="{{auth()->user()->avatar}}" alt="" class="align-self-center ">
                     <p class="text-center bg-dark "><span style="font-size:20px;font-weight:bold ;font-family: monospace">{{auth()->user()->points}}</span><span style="font-size: 14px; padding-left:5px;">POINT</span></p>
                 </div>
 

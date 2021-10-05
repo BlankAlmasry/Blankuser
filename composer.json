@@ -37,8 +37,9 @@
             "App\\": "app/"
         },
         "classmap": [
-            "database/seeds",
-            "database/factories"
+            "resources/database/seeds",
+            "resources/database/factories",
+            "resources/database/migrations"
         ]
     },
     "autoload-dev": {

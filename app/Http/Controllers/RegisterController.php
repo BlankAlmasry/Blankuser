@@ -36,15 +36,10 @@ class RegisterController extends Controller
 
         ]);
         session()->flash('message' , 'Thanks you for Sign Up');
-
-
-        $user->sendEmailVerificationNotification();
         auth()->login($user);
         session()->flash('message' , 'Thanks you for Sign Up');
-
         return redirect('edit-profile');
 
-        //     \Mail::to($user)->send(new Welcome($user));
     }
 
 }
